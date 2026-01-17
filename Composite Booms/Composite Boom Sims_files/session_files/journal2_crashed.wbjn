@@ -1,0 +1,89 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+system1 = GetSystem(Name="ACP-Pre")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+model1.Exit()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+material1.Delete()
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+library2 = EngData.OpenLibrary(
+    Name="Composite Materials",
+    Source="Composite_Materials.xml")
+matl1 = engineeringData1.ImportMaterial(
+    Name="Epoxy Carbon UD (230 GPa) Wet",
+    Source="Composite_Materials.xml")
+matl2 = engineeringData1.ImportMaterial(
+    Name="Epoxy E-Glass Wet",
+    Source="Composite_Materials.xml")
+matl3 = engineeringData1.ImportMaterial(
+    Name="Epoxy Carbon Woven (230 GPa) Wet",
+    Source="Composite_Materials.xml")
+matl4 = engineeringData1.ImportMaterial(
+    Name="Resin Epoxy",
+    Source="Composite_Materials.xml")
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+modelComponent1.Update(AllDependencies=True)
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Refresh(
+    KeepACPOpen=True,
+    BatchMode=False)
+ACP.RefreshAPDLMaterial(
+    Container=setup1,
+    apdlMatFilePath=r"C:\Users\as4024\OneDrive - Imperial College London\Project Svarog\Project_Svarog\Composite Booms\Composite Boom Sims_files\dp0\ACP-Pre\ACP\material.apdl")
+setup1.StartACP(ACPMode="pre")
+ACP.RefreshAPDLMaterial(
+    Container=setup1,
+    apdlMatFilePath=r"C:\Users\as4024\OneDrive - Imperial College London\Project Svarog\Project_Svarog\Composite Booms\Composite Boom Sims_files\dp0\ACP-Pre\ACP\material.apdl")
+Save(Overwrite=True)
+setup1.ExitACP(Save=True)
+system2 = GetSystem(Name="Geom")
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Exit()
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+modelComponent1.Update(AllDependencies=True)
+setup1.Refresh(
+    KeepACPOpen=True,
+    BatchMode=False)
+Parameters.SetDesignPointsOutOfDate()
+Parameters.SetRetainedDesignPointDataInvalid(InvalidContainers=[engineeringData1, geometry1, model1, setup1])
+setupComponent1 = system1.GetComponent(Name="Setup")
+MarkComponentsOutOfDateForDps(Components=[setupComponent1])
+Parameters.SetPartiallyRetainedDataInvalid(Containers=[setup1])
+setup1.StartACP(ACPMode="pre")
+setup1.ExitACP(Save=True)
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+modelComponent1.Update(AllDependencies=True)
+setup1.Refresh(
+    KeepACPOpen=True,
+    BatchMode=False)
+Parameters.SetDesignPointsOutOfDate()
+Parameters.SetRetainedDesignPointDataInvalid(InvalidContainers=[engineeringData1, geometry1, model1, setup1])
+MarkComponentsOutOfDateForDps(Components=[setupComponent1])
+Parameters.SetPartiallyRetainedDataInvalid(Containers=[setup1])
+setup1.StartACP(ACPMode="pre")
+ACP.RefreshAPDLMaterial(
+    Container=setup1,
+    apdlMatFilePath=r"C:\Users\as4024\OneDrive - Imperial College London\Project Svarog\Project_Svarog\Composite Booms\Composite Boom Sims_files\dp0\ACP-Pre\ACP\material.apdl")
+ACP.RefreshAPDLMaterial(
+    Container=setup1,
+    apdlMatFilePath=r"C:\Users\as4024\OneDrive - Imperial College London\Project Svarog\Project_Svarog\Composite Booms\Composite Boom Sims_files\dp0\ACP-Pre\ACP\material.apdl")
+Save(Overwrite=True)
+setup1.ExitACP(Save=True)
+Save(Overwrite=True)
+Save(Overwrite=True)

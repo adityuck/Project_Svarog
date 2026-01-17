@@ -1,0 +1,136 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+system1 = GetSystem(Name="ACP-Pre")
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.StartACP(ACPMode="pre")
+setup1.ExitACP(Save=True)
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Update(AllDependencies=True)
+setup1.Refresh(
+    KeepACPOpen=True,
+    BatchMode=False)
+Parameters.SetDesignPointsOutOfDate()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+system2 = GetSystem(Name="Geom")
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+Parameters.SetRetainedDesignPointDataInvalid(InvalidContainers=[engineeringData1, geometry1, model1, setup1])
+setupComponent1 = system1.GetComponent(Name="Setup")
+MarkComponentsOutOfDateForDps(Components=[setupComponent1])
+Parameters.SetPartiallyRetainedDataInvalid(Containers=[setup1])
+setup1.StartACP(ACPMode="pre")
+setup1.ExitACP(Save=True)
+setup1.StartACP(ACPMode="pre")
+Parameters.SetDesignPointsOutOfDate()
+Parameters.SetRetainedDesignPointDataInvalid(InvalidContainers=[engineeringData1, geometry1, model1, setup1])
+MarkComponentsOutOfDateForDps(Components=[setupComponent1])
+Parameters.SetPartiallyRetainedDataInvalid(Containers=[setup1])
+Save(Overwrite=True)
+setup1.ExitACP(Save=True)
+setupComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system3 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+geometryComponent1 = system3.GetComponent(Name="Geometry")
+geometryComponent2 = system1.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system3,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system1)
+geometryComponent1.DeleteShare(System=system3)
+modelComponent1.TransferData(TargetComponent=geometryComponent1)
+modelComponent2 = system3.GetComponent(Name="Model")
+setupComponent1.TransferSpecificData(
+    TransferDataName="EnhancedModelData",
+    TargetComponent=modelComponent2)
+modelComponent1.Update(AllDependencies=True)
+modelComponent1.DeleteTransfer(TargetComponent=geometryComponent1)
+setupComponent1.Update(AllDependencies=True)
+setupComponent1.TransferSpecificData(
+    TransferDataName="EnhancedModelData",
+    TargetComponent=modelComponent2)
+setupComponent1.TransferSpecificData(
+    TransferDataName="EnhancedModelData",
+    TargetComponent=modelComponent2)
+system3.Delete()
+setup1.StartACP(ACPMode="pre")
+setup1.ExitACP(Save=True)
+Save(Overwrite=True)
+ExportSystems(
+    Systems=[system1],
+    FilePath=r"C:\Users\as4024\OneDrive - Imperial College London\Project Svarog\Project_Svarog\Composite Booms\ACP Setup.wbpz",
+    IncludeUserFiles=True,
+    IncludeResultFiles=True,
+    IncludeExternalFiles=True)
+Open(FilePath="C:/Users/as4024/OneDrive - Imperial College London/Project Svarog/Project_Svarog/Composite Booms/Composite Setup - Failsafe.wbpj")
+template2 = GetTemplate(TemplateName="MopsolverTemplate")
+componentTemplate1 = GetComponentTemplate(Name="MopsolverTemplate")
+system4 = template2.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=setupComponent1, TransferName=None, ToComponentTemplate=componentTemplate1)],
+    RelativeTo=system1)
+system4 = GetSystem(Name="Mopsolver")
+mopsolverComponent1 = system4.GetComponent(Name="Mopsolver")
+mopsolverComponent1.AlwaysBePartOfDpUpdate = True
+mopsolver1 = system4.GetContainer(ComponentName="Mopsolver")
+string1 = mopsolver1.DynSendCommand(
+    Command="CREATE_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string2 = mopsolver1.DynSendCommand(Command="SAVE")
+string3 = mopsolver1.DynSendCommand(Command="CLOSE_SERVER")
+mopsolverComponent1.Refresh()
+boolean1 = mopsolver1.DynEditIntegration()
+string4 = mopsolver1.DynSendCommand(
+    Command="PREPARE_SERVER",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string5 = mopsolver1.DynSendCommand(
+    Command="REGISTER_FILE",
+    Scope="INTEGRATION_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynDeleteParameters(
+    ParameterNames=["P0"],
+    Container=mopsolver1)
+ACT.DynDeleteParameters(
+    ParameterNames=["P0"],
+    Container=mopsolver1)
+string6 = mopsolver1.DynSendCommand(
+    Command="LINK_REGISTERED_FILE",
+    Scope="INTEGRATION_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynDeleteParameters(
+    ParameterNames=["P0"],
+    Container=mopsolver1)
+ACT.DynDeleteParameters(
+    ParameterNames=["P0"],
+    Container=mopsolver1)
+string7 = mopsolver1.DynSendCommand(Command="ACTIVATE_WINDOW")
+string8 = mopsolver1.DynSendCommand(
+    Command="SHOW_NODE_DIALOG",
+    Scope="INTEGRATION_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string9 = mopsolver1.DynSendCommand(Command="CLOSE_SERVER")
+system5 = template1.CreateSystem(
+    Position="Below",
+    RelativeTo=system4)
+modelComponent3 = system5.GetComponent(Name="Model")
+setupComponent1.TransferSpecificData(
+    TransferDataName="EnhancedModelData",
+    TargetComponent=modelComponent3)
+system4.Delete()
+modelComponent3.Refresh()
+model2 = system5.GetContainer(ComponentName="Model")
+model2.Edit()
+model2.Exit()
+Save(Overwrite=True)
+results1 = system5.GetContainer(ComponentName="Results")
+results1.Edit()
+model2.Exit()
+Save(Overwrite=True)

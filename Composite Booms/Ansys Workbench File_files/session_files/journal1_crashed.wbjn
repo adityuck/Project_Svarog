@@ -1,0 +1,154 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+template1 = GetTemplate(TemplateName="Geometry")
+system1 = template1.CreateSystem()
+template2 = GetTemplate(
+    TemplateName="ACP",
+    Solver="Pre")
+system2 = template2.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.SetFile(FilePath="C:/Users/as4024/OneDrive - Imperial College London/Project Svarog/Project_Svarog/Composite Booms/Composite Boom.step")
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Exit()
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Exit()
+system1.Delete()
+system2.Delete()
+system3 = template1.CreateSystem()
+geometry2 = system3.GetContainer(ComponentName="Geometry")
+geometry2.Edit(IsDiscoveryGeometry=True)
+geometry2.Exit()
+geometry2.SetFile(FilePath="C:/Users/as4024/OneDrive - Imperial College London/Project Svarog/Project_Svarog/Composite Booms/Composite Boom Full Length.step")
+geometry2.Edit(IsDiscoveryGeometry=True)
+geometry2.Exit()
+system4 = template2.CreateSystem(
+    Position="Right",
+    RelativeTo=system3)
+geometryComponent1 = system4.GetComponent(Name="Geometry")
+geometryComponent2 = system3.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system4,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system3)
+engineeringData1 = system4.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+material1.Delete()
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="Composite Materials",
+    Source="Composite_Materials.xml")
+matl1 = engineeringData1.ImportMaterial(
+    Name="Epoxy Carbon UD (230 GPa) Wet",
+    Source="Composite_Materials.xml")
+matl2 = engineeringData1.ImportMaterial(
+    Name="Epoxy Carbon UD (230 GPa) Wet",
+    Source="Composite_Materials.xml")
+matl3 = engineeringData1.ImportMaterial(
+    Name="Epoxy Carbon Woven (230 GPa) Wet",
+    Source="Composite_Materials.xml")
+matl4 = engineeringData1.ImportMaterial(
+    Name="Epoxy E-Glass Wet",
+    Source="Composite_Materials.xml")
+matl5 = engineeringData1.ImportMaterial(
+    Name="Resin Epoxy",
+    Source="Composite_Materials.xml")
+EngData.EnableFilter(Enable=False)
+modelComponent1 = system4.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system4.GetContainer(ComponentName="Model")
+model1.Edit()
+model1.Exit()
+geometry2.Edit(IsDiscoveryGeometry=True)
+geometry2.Exit()
+system3.Delete()
+system5 = template1.CreateSystem(
+    Position="Left",
+    RelativeTo=system4)
+geometry3 = system5.GetContainer(ComponentName="Geometry")
+geometry3.SetFile(FilePath="C:/Users/as4024/OneDrive - Imperial College London/Project Svarog/Project_Svarog/Composite Booms/Composite Boom Full Length.step")
+geometry3.Edit(IsDiscoveryGeometry=True)
+geometry3.Exit()
+modelComponent1.Refresh()
+model1.Edit()
+model1.Exit()
+geometryComponent3 = system5.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system4,
+    ComponentToShare=geometryComponent3,
+    SourceSystem=system5)
+modelComponent1.Refresh()
+model1.Edit()
+model1.Exit()
+model1.Edit()
+model1.Exit()
+system4.Delete()
+system6 = template2.CreateSystem(
+    Position="Right",
+    RelativeTo=system5)
+geometryComponent4 = system6.GetComponent(Name="Geometry")
+geometryComponent4.ReplaceWithShare(
+    TargetSystem=system6,
+    ComponentToShare=geometryComponent3,
+    SourceSystem=system5)
+engineeringData2 = system6.GetContainer(ComponentName="Engineering Data")
+material2 = engineeringData2.GetMaterial(Name="Structural Steel")
+material2.Delete()
+matl6 = engineeringData2.ImportMaterial(
+    Name="Epoxy Carbon UD (230 GPa) Wet",
+    Source="Composite_Materials.xml")
+matl7 = engineeringData2.ImportMaterial(
+    Name="Epoxy E-Glass Wet",
+    Source="Composite_Materials.xml")
+matl8 = engineeringData2.ImportMaterial(
+    Name="Resin Epoxy",
+    Source="Composite_Materials.xml")
+Save(Overwrite=True)
+modelComponent2 = system6.GetComponent(Name="Model")
+modelComponent2.Refresh()
+model2 = system6.GetContainer(ComponentName="Model")
+model2.Edit()
+model2.Exit()
+system5.Delete()
+system7 = template2.CreateSystem(
+    Position="Left",
+    RelativeTo=system6)
+system7.Delete()
+system8 = template1.CreateSystem(
+    Position="Left",
+    RelativeTo=system6)
+geometry4 = system8.GetContainer(ComponentName="Geometry")
+geometry4.Edit(IsDiscoveryGeometry=True)
+geometry4.Exit()
+geometry4.SetFile(FilePath="C:/Users/as4024/OneDrive - Imperial College London/Project Svarog/Project_Svarog/Composite Booms/Composite Boom Full Length.step")
+geometry4.Edit(IsDiscoveryGeometry=True)
+geometry4.Exit()
+geometryComponent5 = system8.GetComponent(Name="Geometry")
+geometryComponent4.ReplaceWithShare(
+    TargetSystem=system6,
+    ComponentToShare=geometryComponent5,
+    SourceSystem=system8)
+geometry4.Edit(IsDiscoveryGeometry=True)
+geometry4.Exit()
+system6.Delete()
+geometry4.Edit(IsDiscoveryGeometry=True)
+geometry4.Exit()
+system9 = template2.CreateSystem(
+    Position="Right",
+    RelativeTo=system8)
+geometryComponent6 = system9.GetComponent(Name="Geometry")
+geometryComponent6.ReplaceWithShare(
+    TargetSystem=system9,
+    ComponentToShare=geometryComponent5,
+    SourceSystem=system8)
+modelComponent3 = system9.GetComponent(Name="Model")
+modelComponent3.Refresh()
+model3 = system9.GetContainer(ComponentName="Model")
+model3.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)

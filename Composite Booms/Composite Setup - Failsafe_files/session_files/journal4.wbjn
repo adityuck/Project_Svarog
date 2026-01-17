@@ -1,0 +1,36 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+system1 = GetSystem(Name="ACP-Pre")
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.StartACP(ACPMode="pre")
+setup1.ExitACP(Save=True)
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+setupComponent1 = system1.GetComponent(Name="Setup")
+modelComponent1 = system2.GetComponent(Name="Model")
+setupComponent1.TransferData(TargetComponent=modelComponent1)
+modelComponent1.Refresh()
+setupComponent1.Update(AllDependencies=True)
+setup1.StartACP(ACPMode="pre")
+setup1.ExitACP(Save=True)
+system2.Delete()
+system3 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+modelComponent2 = system3.GetComponent(Name="Model")
+setupComponent1.TransferSpecificData(
+    TransferDataName="EnhancedModelData",
+    TargetComponent=modelComponent2)
+setupComponent1.Update(AllDependencies=True)
+modelComponent2.Refresh()
+model1 = system3.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)

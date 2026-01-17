@@ -1,0 +1,74 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+system1 = GetSystem(Name="ACP-Pre")
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.StartACP(ACPMode="pre")
+setup1.ExitACP(Save=True)
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Update(AllDependencies=True)
+setup1.Refresh(
+    KeepACPOpen=True,
+    BatchMode=False)
+Parameters.SetDesignPointsOutOfDate()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+system2 = GetSystem(Name="Geom")
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+Parameters.SetRetainedDesignPointDataInvalid(InvalidContainers=[engineeringData1, geometry1, model1, setup1])
+setupComponent1 = system1.GetComponent(Name="Setup")
+MarkComponentsOutOfDateForDps(Components=[setupComponent1])
+Parameters.SetPartiallyRetainedDataInvalid(Containers=[setup1])
+setup1.StartACP(ACPMode="pre")
+setup1.ExitACP(Save=True)
+setup1.StartACP(ACPMode="pre")
+Parameters.SetDesignPointsOutOfDate()
+Parameters.SetRetainedDesignPointDataInvalid(InvalidContainers=[engineeringData1, geometry1, model1, setup1])
+MarkComponentsOutOfDateForDps(Components=[setupComponent1])
+Parameters.SetPartiallyRetainedDataInvalid(Containers=[setup1])
+Save(Overwrite=True)
+setup1.ExitACP(Save=True)
+setupComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system3 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+geometryComponent1 = system3.GetComponent(Name="Geometry")
+geometryComponent2 = system1.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system3,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system1)
+geometryComponent1.DeleteShare(System=system3)
+modelComponent1.TransferData(TargetComponent=geometryComponent1)
+modelComponent2 = system3.GetComponent(Name="Model")
+setupComponent1.TransferSpecificData(
+    TransferDataName="EnhancedModelData",
+    TargetComponent=modelComponent2)
+modelComponent1.Update(AllDependencies=True)
+modelComponent1.DeleteTransfer(TargetComponent=geometryComponent1)
+setupComponent1.Update(AllDependencies=True)
+setupComponent1.TransferSpecificData(
+    TransferDataName="EnhancedModelData",
+    TargetComponent=modelComponent2)
+setupComponent1.TransferSpecificData(
+    TransferDataName="EnhancedModelData",
+    TargetComponent=modelComponent2)
+system3.Delete()
+setup1.StartACP(ACPMode="pre")
+setup1.ExitACP(Save=True)
+Save(Overwrite=True)
+ExportSystems(
+    Systems=[system1],
+    FilePath=r"C:\Users\as4024\OneDrive - Imperial College London\Project Svarog\Project_Svarog\Composite Booms\ACP Setup.wbpz",
+    IncludeUserFiles=True,
+    IncludeResultFiles=True,
+    IncludeExternalFiles=True)
+Open(FilePath="C:/Users/as4024/OneDrive - Imperial College London/Project Svarog/Project_Svarog/Composite Booms/Composite Setup - Failsafe.wbpj")

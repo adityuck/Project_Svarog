@@ -1,0 +1,20 @@
+/COM,ANSYS RELEASE 2024 R2           BUILD 24.2      UP20240603       17:33:41
+
+ *** WARNING ***                         CP =       0.156   TIME= 17:33:42
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       1.484   TIME= 17:33:44
+ Too many nodes 21022 are included in the force-distributed-surface      
+ constraint identified by real constant set 9.  This may greatly affect  
+ solver performance due to large wave fronts and memory consumption.     
+ Also check results carefully and consider solving with a different      
+ unit system.                                                            
+
+ *** ERROR ***                           CP =       1.547   TIME= 17:33:45
+ This model has one or more constraint equations that has 42026 terms.   
+ This will lead to significantly higher memory requirements and          
+ solution times.  At this point the solution will be terminated.  If     
+ you wish to bypass this message to allow the solution to continue with  
+ increased solution time and memory requirements, use the CEFILTER,OFF   
+ command.                                                                

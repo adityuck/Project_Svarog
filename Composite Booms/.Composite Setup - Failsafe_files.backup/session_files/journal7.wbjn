@@ -1,0 +1,10 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+system1 = GetSystem(Name="SYS")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+system2 = GetSystem(Name="ACP-Pre")
+setup1 = system2.GetContainer(ComponentName="Setup")
+setup1.StartACP(ACPMode="pre")
+Save(Overwrite=True)

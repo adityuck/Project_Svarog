@@ -1,0 +1,1730 @@
+[
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.12042750312952223,
+    "C_cap": 0.42880764661068604,
+    "r_coil": 4.8973007281901095
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.14675388092752978,
+    "C_cap": 0.46955171808418295,
+    "r_coil": 4.472350795708311
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      0
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      0
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.12042750312952223,
+    "C_cap": 0.42880764661068604,
+    "r_coil": 4.8973007281901095
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      0
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      0
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.14675388092752978,
+    "C_cap": 0.46955171808418295,
+    "r_coil": 4.472350795708311
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3634412272082332,
+    "C_cap": 0.5162139216701377,
+    "r_coil": 4.068080909568934
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1948611002853528,
+    "C_cap": 0.4603700081315404,
+    "r_coil": 4.561548239258827
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3634412272082332,
+    "C_cap": 0.5162139216701377,
+    "r_coil": 4.068080909568934
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.26024790599298214,
+    "C_cap": 0.5095742509840302,
+    "r_coil": 4.121087350753547
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      45
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3634412272082332,
+    "C_cap": 0.5162139216701377,
+    "r_coil": 4.068080909568934
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      45
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1948611002853528,
+    "C_cap": 0.4603700081315404,
+    "r_coil": 4.561548239258827
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      45
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3634412272082332,
+    "C_cap": 0.5162139216701377,
+    "r_coil": 4.068080909568934
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      45
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.26024790599298214,
+    "C_cap": 0.5095742509840302,
+    "r_coil": 4.121087350753547
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.35158593010269135,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1665719096895253,
+    "C_cap": 0.49108246274237294,
+    "r_coil": 4.276267550408703
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.35158593010269135,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23775486457066858,
+    "C_cap": 0.545267933816997,
+    "r_coil": 3.851317617926901
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      90
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.35158593010269135,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      90
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1665719096895253,
+    "C_cap": 0.49108246274237294,
+    "r_coil": 4.276267550408703
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      90
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.35158593010269135,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      -45,
+      90
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23775486457066858,
+    "C_cap": 0.545267933816997,
+    "r_coil": 3.851317617926901
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.12042750312952223,
+    "C_cap": 0.42880764661068604,
+    "r_coil": 4.8973007281901095
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.14675388092752978,
+    "C_cap": 0.46955171808418295,
+    "r_coil": 4.472350795708311
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.12042750312952223,
+    "C_cap": 0.42880764661068604,
+    "r_coil": 4.8973007281901095
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.14675388092752978,
+    "C_cap": 0.46955171808418295,
+    "r_coil": 4.472350795708311
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.12042750312952223,
+    "C_cap": 0.42880764661068604,
+    "r_coil": 4.8973007281901095
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.14675388092752978,
+    "C_cap": 0.46955171808418295,
+    "r_coil": 4.472350795708311
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      45
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      45
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.12042750312952223,
+    "C_cap": 0.42880764661068604,
+    "r_coil": 4.8973007281901095
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      45
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      45
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.14675388092752978,
+    "C_cap": 0.46955171808418295,
+    "r_coil": 4.472350795708311
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.29614605680252803,
+    "C_cap": 0.533124582914566,
+    "r_coil": 3.9390417686601564
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1500481988047074,
+    "C_cap": 0.4794992352921878,
+    "r_coil": 4.379569028343379
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.29614605680252803,
+    "C_cap": 0.533124582914566,
+    "r_coil": 3.9390417686601564
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.19646158227866245,
+    "C_cap": 0.527351163920786,
+    "r_coil": 3.982166236984818
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      90
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.29614605680252803,
+    "C_cap": 0.533124582914566,
+    "r_coil": 3.9390417686601564
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      90
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1500481988047074,
+    "C_cap": 0.4794992352921878,
+    "r_coil": 4.379569028343379
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      90
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.29614605680252803,
+    "C_cap": 0.533124582914566,
+    "r_coil": 3.9390417686601564
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      0,
+      90
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.19646158227866245,
+    "C_cap": 0.527351163920786,
+    "r_coil": 3.982166236984818
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3634412272082332,
+    "C_cap": 0.5162139216701377,
+    "r_coil": 4.068080909568934
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1948611002853528,
+    "C_cap": 0.4603700081315404,
+    "r_coil": 4.561548239258827
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3634412272082332,
+    "C_cap": 0.5162139216701377,
+    "r_coil": 4.068080909568934
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.26024790599298214,
+    "C_cap": 0.5095742509840302,
+    "r_coil": 4.121087350753547
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3634412272082332,
+    "C_cap": 0.5162139216701377,
+    "r_coil": 4.068080909568934
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1948611002853528,
+    "C_cap": 0.4603700081315404,
+    "r_coil": 4.561548239258827
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3634412272082332,
+    "C_cap": 0.5162139216701377,
+    "r_coil": 4.068080909568934
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.26024790599298214,
+    "C_cap": 0.5095742509840302,
+    "r_coil": 4.121087350753547
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.12042750312952223,
+    "C_cap": 0.42880764661068604,
+    "r_coil": 4.8973007281901095
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.14675388092752978,
+    "C_cap": 0.46955171808418295,
+    "r_coil": 4.472350795708311
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      0
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      0
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.12042750312952223,
+    "C_cap": 0.42880764661068604,
+    "r_coil": 4.8973007281901095
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      0
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23162501151127965,
+    "C_cap": 0.4764095251287606,
+    "r_coil": 4.407972320520726
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      0
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.14675388092752978,
+    "C_cap": 0.46955171808418295,
+    "r_coil": 4.472350795708311
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3515859301026913,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.16657190968952523,
+    "C_cap": 0.49108246274237294,
+    "r_coil": 4.276267550408703
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3515859301026913,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      90
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23775486457066866,
+    "C_cap": 0.545267933816997,
+    "r_coil": 3.851317617926901
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      90
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3515859301026913,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      90
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.16657190968952523,
+    "C_cap": 0.49108246274237294,
+    "r_coil": 4.276267550408703
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      90
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3515859301026913,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      45,
+      90
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23775486457066866,
+    "C_cap": 0.545267933816997,
+    "r_coil": 3.851317617926901
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.35158593010269135,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1665719096895253,
+    "C_cap": 0.49108246274237294,
+    "r_coil": 4.276267550408703
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.35158593010269135,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      -45
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23775486457066858,
+    "C_cap": 0.545267933816997,
+    "r_coil": 3.851317617926901
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.35158593010269135,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1665719096895253,
+    "C_cap": 0.49108246274237294,
+    "r_coil": 4.276267550408703
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.35158593010269135,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      -45
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23775486457066858,
+    "C_cap": 0.545267933816997,
+    "r_coil": 3.851317617926901
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.29614605680252803,
+    "C_cap": 0.533124582914566,
+    "r_coil": 3.9390417686601564
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1500481988047074,
+    "C_cap": 0.4794992352921878,
+    "r_coil": 4.379569028343379
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.29614605680252803,
+    "C_cap": 0.533124582914566,
+    "r_coil": 3.9390417686601564
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      0
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.19646158227866245,
+    "C_cap": 0.527351163920786,
+    "r_coil": 3.982166236984818
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      0
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.29614605680252803,
+    "C_cap": 0.533124582914566,
+    "r_coil": 3.9390417686601564
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      0
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.1500481988047074,
+    "C_cap": 0.4794992352921878,
+    "r_coil": 4.379569028343379
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      0
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.29614605680252803,
+    "C_cap": 0.533124582914566,
+    "r_coil": 3.9390417686601564
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      0
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.19646158227866245,
+    "C_cap": 0.527351163920786,
+    "r_coil": 3.982166236984818
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      -45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3515859301026913,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      0,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.16657190968952523,
+    "C_cap": 0.49108246274237294,
+    "r_coil": 4.276267550408703
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      45,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3515859301026913,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      45
+    ],
+    "inner_stack": [
+      -45,
+      90,
+      -45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23775486457066866,
+    "C_cap": 0.545267933816997,
+    "r_coil": 3.851317617926901
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      45
+    ],
+    "inner_stack": [
+      45,
+      -45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3515859301026913,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      45
+    ],
+    "inner_stack": [
+      45,
+      0,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.16657190968952523,
+    "C_cap": 0.49108246274237294,
+    "r_coil": 4.276267550408703
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      45
+    ],
+    "inner_stack": [
+      45,
+      45,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.3515859301026913,
+    "C_cap": 0.5511490796740707,
+    "r_coil": 3.8102213674054632
+  },
+  {
+    "material": "UD",
+    "outer_count": 2,
+    "inner_count": 3,
+    "outer_stack": [
+      90,
+      45
+    ],
+    "inner_stack": [
+      45,
+      90,
+      45
+    ],
+    "bistable": 1,
+    "ddUcap_ddtheta2": 0.23775486457066866,
+    "C_cap": 0.545267933816997,
+    "r_coil": 3.851317617926901
+  }
+]

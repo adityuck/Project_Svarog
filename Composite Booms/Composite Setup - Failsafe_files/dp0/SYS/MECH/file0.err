@@ -1,0 +1,80 @@
+/COM,ANSYS RELEASE 2025 R2           BUILD 25.2      UP20250519       23:00:34
+
+ *** WARNING ***                         CP =       2.609   TIME= 23:00:35
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       6.094   TIME= 23:00:37
+ Node 1005 connects both contact element 34001 and target element 49993. 
+  Please check the model carefully.                                      
+
+ *** WARNING ***                         CP =       6.562   TIME= 23:00:37
+ Overconstraint may occur for Lagrange multiplier or MPC based contact   
+ algorithm.                                                              
+
+ *** WARNING ***                         CP =       6.562   TIME= 23:00:37
+ Boundary conditions, coupling, and/or constraint equations have been    
+ applied on certain contact nodes (for example 3).                       
+
+ *** WARNING ***                         CP =       8.438   TIME= 23:00:38
+ Node 757 connects both contact element 41745 and target element 26249.  
+ Please check the model carefully.                                       
+
+ *** WARNING ***                         CP =       8.812   TIME= 23:00:38
+ Overconstraint may occur for Lagrange multiplier or MPC based contact   
+ algorithm.                                                              
+
+ *** WARNING ***                         CP =       8.812   TIME= 23:00:38
+ Certain nodes (for example 757) appear in both sides of contact and     
+ target surface.                                                         
+
+ *** WARNING ***                         CP =       9.938   TIME= 23:00:38
+ Node 757 connects both contact element 41745 and target element 26249.  
+ Please check the model carefully.                                       
+
+ *** WARNING ***                         CP =      10.219   TIME= 23:00:38
+ Overconstraint may occur for Lagrange multiplier or MPC based contact   
+ algorithm.                                                              
+
+ *** WARNING ***                         CP =      10.219   TIME= 23:00:38
+ Certain nodes (for example 757) appear in both sides of contact and     
+ target surface.                                                         
+
+ *** WARNING ***                         CP =      10.234   TIME= 23:00:38
+ Node 757 connects both contact element 41745 and target element 26249.  
+ Please check the model carefully.                                       
+
+ *** WARNING ***                         CP =      12.188   TIME= 23:00:39
+ Node 507 connects both contact element 41495 and target element 26499.  
+ Please check the model carefully.                                       
+
+ *** WARNING ***                         CP =      12.188   TIME= 23:00:39
+ Node 257 connects both contact element 41245 and target element 26749.  
+ Please check the model carefully.                                       
+
+ *** WARNING ***                         CP =      12.188   TIME= 23:00:39
+ Node 757 connects both contact element 41745 and target element 26249.  
+ Please check the model carefully.                                       
+
+ *** WARNING ***                         CP =      12.188   TIME= 23:00:39
+ Node 257 connects both contact element 41245 and target element 26749.  
+ Please check the model carefully.                                       
+
+ *** WARNING ***                         CP =      12.188   TIME= 23:00:39
+ Node 507 connects both contact element 41495 and target element 26499.  
+ Please check the model carefully.                                       
+
+ *** WARNING ***                         CP =      12.188   TIME= 23:00:39
+ Node 757 connects both contact element 41745 and target element 26249.  
+ Please check the model carefully.                                       
+
+ *** ERROR ***                           CP =      31.688   TIME= 23:00:59
+ Element 16000 has excessive distortion.                                 
+
+ *** WARNING ***                         CP =     244.953   TIME= 23:04:35
+ A reference moment value times the tolerance is used by the             
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference MOMENT CONVERGENCE VALUE = 3.408605204E-27 is less than a     
+ threshold.  This threshold is internally calculated.  You can           
+ overwrite it by specifying MINREF on the CNVTOL command.  Check         
+ results carefully.                                                      

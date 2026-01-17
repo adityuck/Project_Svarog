@@ -1,0 +1,33 @@
+# 
+# ACP Pre Database File
+# 
+# Copyright (c) 2005 - 2025 by ANSYS Switzerland GmbH
+# Unauthorized use, distribution, or duplication is prohibited.
+# 
+# Product: Ansys Composite PrepPost
+# Version: 2024 R2
+# Written: 2025-11-03 17:11:12
+# 
+acp_file_version='24.2'
+db.import_model(name='ACP Model', path='../MECH/ACP-Pre.2.h5', format='ansys:h5', ignored_entities=['materials'], unit_system_type='mpa')
+db.models['ACP Model']._pre_unit_system_type = 'mpa'
+db.models['ACP Model'].material_data.import_matml(path='..\\ENGD\\material.engd', material_apdl_path='material.apdl')
+db.models['ACP Model'].material_data.create_fabric(name='0 - 90 Woven Fabric ', material=db.models['ACP Model'].material_data.materials.find(lambda v: v.ext_id == 'cdcfb11a-40f1-404a-b4a2-1519c572084f'), thickness=0.1, area_price=0.0, drop_off_material_handling='Global', cut_off_material_handling='Computed', cut_off_material=db.models['ACP Model'].material_data.materials.find(lambda v: v.ext_id == 'cdcfb11a-40f1-404a-b4a2-1519c572084f'), draping_material_model='woven',  )
+db.models['ACP Model'].material_data.fabrics['0 - 90 Woven Fabric '].graph_plot.query={'polar_properties': ['E1']}
+db.models['ACP Model'].material_data.fabrics['0 - 90 Woven Fabric '].graph_plot.core_scale_factor=1.0
+db.models['ACP Model'].material_data.create_stackup(name='Structural Stackup', fabrics=[(db.models['ACP Model'].material_data.fabrics.get('0 - 90 Woven Fabric '), 0.0), (db.models['ACP Model'].material_data.fabrics.get('0 - 90 Woven Fabric '), 45.0)], area_price=0.0, symmetry='No Symmetry', layup_sequence='Top-Down',drop_off_material_handling='Global', cut_off_material_handling='Computed', cut_off_material=db.models['ACP Model'].material_data.materials.find(lambda v: v.ext_id == 'cdcfb11a-40f1-404a-b4a2-1519c572084f'), draping_material_model='woven', )
+db.models['ACP Model'].material_data.stackups['Structural Stackup'].graph_plot.query={'layup': [], 'polar_properties': [], 'text_plot': []}
+db.models['ACP Model'].material_data.stackups['Structural Stackup'].graph_plot.core_scale_factor=1.0
+db.models['ACP Model'].create_element_set(name='All_Elements', op='add', middle_offset=False)
+db.models['ACP Model'].create_element_set(name='Side 1', op='add', middle_offset=False)
+db.models['ACP Model'].create_element_set(name='Side 2', op='add', middle_offset=False)
+db.models['ACP Model'].create_element_set(name='Face Set 1', op='add', middle_offset=False)
+db.models['ACP Model'].create_element_set(name='Face Set 2', op='add', middle_offset=False)
+db.models['ACP Model'].create_rosette(name='Web', origin=(0.0, 0.0, 0.0), dir1=(1.0, 0.0, 0.0), dir2=(0.0, 1.0, 0.0), rosette_type='edge_wise', edge_set=db.models['ACP Model'].edge_sets.get('Web Edge'))
+db.models['ACP Model'].create_rosette(name='Arc Edge 1', origin=(0.0, 0.0, 0.0), dir1=(1.0, 0.0, 0.0), dir2=(0.0, 1.0, 0.0), rosette_type='edge_wise', edge_set=db.models['ACP Model'].edge_sets.get('Arc Edge 1'))
+db.models['ACP Model'].create_rosette(name='Arc Edge 2', origin=(0.0, 0.0, 0.0), dir1=(-1.0, -0.0, -0.0), dir2=(0.0, 1.0, 0.0), rosette_type='edge_wise', edge_set=db.models['ACP Model'].edge_sets.get('Arc Edge 2'))
+db.models['ACP Model'].create_oriented_selection_set(name='OrientedSelectionSet.1', orientation_point=(-2343.0352, 20.9172, 54.001), orientation_direction=(0.0015581622030275677, -0.47113515403198014, -0.8820596571467326), rosette_selection_method='minimum_angle', element_sets=[db.models['ACP Model'].element_sets.get('Face Set 1')], rosettes=[db.models['ACP Model'].rosettes.get('Web'),db.models['ACP Model'].rosettes.get('Arc Edge 1')], selection_rules=[], draping=False, draping_direction=(0.0, 0.0, 1.0), draping_seed_point=(0.0, 0.0, 0.0), auto_draping_direction=True, draping_mesh_size=0.0, use_default_draping_mesh_size=True, draping_material_model='woven', draping_ud_coefficient=0.0, reference_direction_field=None)
+db.models['ACP Model'].create_oriented_selection_set(name='OrientedSelectionSet.2', orientation_point=(-2339.5085, 42.334, 54.8876), orientation_direction=(-0.0031444033766380936, 0.2900509784112345, -0.9570060306236794), rosette_selection_method='minimum_angle', element_sets=[db.models['ACP Model'].element_sets.get('Face Set 2')], rosettes=[db.models['ACP Model'].rosettes.get('Web'),db.models['ACP Model'].rosettes.get('Arc Edge 2')], selection_rules=[], draping=False, draping_direction=(0.0, 0.0, 1.0), draping_seed_point=(0.0, 0.0, 0.0), auto_draping_direction=True, draping_mesh_size=0.0, use_default_draping_mesh_size=True, draping_material_model='woven', draping_ud_coefficient=0.0, reference_direction_field=None)
+db.models['ACP Model'].create_modeling_group(name='ModelingGroup.1')
+db.models['ACP Model'].modeling_groups['ModelingGroup.1'].create_modeling_ply(name='ModelingPly.1', ply_angle=0.0, number_of_layers=1, draping='no_draping', draping_seed_point=(0.0, 0.0, 0.0), auto_draping_direction=True, draping_thickness_correction=True, draping_direction=(1.0, 0.0, 0.0), draping_mesh_size=0.0, use_default_draping_mesh_size=True, thickness_definition='nominal', global_ply_nr=1, ply_material=db.models['ACP Model'].material_data.stackups.get('Structural Stackup'), active=True, oriented_selection_sets=[db.models['ACP Model'].oriented_selection_sets.get('OrientedSelectionSet.1')])
+db.models['ACP Model'].modeling_groups['ModelingGroup.1'].create_modeling_ply(name='ModelingPly.2', ply_angle=0.0, number_of_layers=1, draping='no_draping', draping_seed_point=(0.0, 0.0, 0.0), auto_draping_direction=True, draping_thickness_correction=True, draping_direction=(1.0, 0.0, 0.0), draping_mesh_size=0.0, use_default_draping_mesh_size=True, thickness_definition='nominal', global_ply_nr=2, ply_material=db.models['ACP Model'].material_data.stackups.get('Structural Stackup'), active=True, oriented_selection_sets=[db.models['ACP Model'].oriented_selection_sets.get('OrientedSelectionSet.2')])
